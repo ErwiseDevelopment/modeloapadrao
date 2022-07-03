@@ -1,0 +1,147 @@
+$utility-name: 'u-color-folk';
+
+.#{$utility-name} {
+    &-black {
+        color: $color-folk-black;
+    }
+
+    &-white {
+        color: $color-folk-white;
+    }
+}
+
+//before
+.before\:\: {
+    &#{$utility-name} {
+        &-black {
+            &::before {
+                color: $color-folk-black !important;
+            }
+        }
+
+        &-white {
+            &::before {
+                color: $color-folk-white !important;
+            }
+        }
+    }
+}
+
+//after
+.after\:\: {
+    &#{$utility-name} {
+        &-black {
+            &::after {
+                color: $color-folk-black !important;
+            }
+        }
+
+        &-white {
+            &::after {
+                color: $color-folk-white !important;
+            }
+        }
+    }
+}
+
+//hover
+.hover\: {
+    &#{$utility-name} {
+        &-black {
+            &:hover {
+                color: $color-folk-black !important;
+            }
+        }
+
+        &-white {
+            &:hover {
+                color: $color-folk-white !important;
+            }
+        }
+    }
+}
+
+//query sm
+.sm\: {
+    &#{$utility-name} {
+        &-black {
+            @media screen and (min-width: 576px) {
+                color: $color-folk-black !important;
+            }
+        }
+
+        &-white{
+            @media screen and (min-width: 576px) {
+                color: $color-folk-white!important;
+            }
+        }
+    }
+}
+
+//query md
+.md\: {
+    &#{$utility-name} {
+        &-black {
+            @media screen and (min-width: 768px) {
+                color: $color-folk-black !important;
+            }
+        }
+
+        &-white{
+            @media screen and (min-width: 768px) {
+                color: $color-folk-white!important;
+            }
+        }
+    }
+}
+
+//query lg
+.lg\: {
+    &#{$utility-name} {
+        &-black {
+            @media screen and (min-width: 992px) {
+                color: $color-folk-black !important;
+            }
+        }
+
+        &-white{
+            @media screen and (min-width: 992px) {
+                color: $color-folk-white!important;
+            }
+        }
+    }
+}
+
+//query xl
+.xl\: {
+    &#{$utility-name} {
+        &-black {
+            @media screen and (min-width: 1200px) {
+                color: $color-folk-black !important;
+            }
+        }
+
+        &-white{
+            @media screen and (min-width: 1200px) {
+                color: $color-folk-white!important;
+            }
+        }
+    }
+}
+
+//query xxl
+.xxl\: {
+    &#{$utility-name} {
+        &-black {
+            @media screen and (min-width: 1600px) {
+                color: $color-folk-black !important;
+            }
+        }
+
+        &-white{
+            @media screen and (min-width: 1600px) {
+                color: $color-folk-white!important;
+            }
+        }
+    }
+}
